@@ -3,4 +3,4 @@ Curso de HTML5 e CSS3 - CursoEmVídeo
 
 Aprendendo a utilizar o git e o github para versionamento de códigos!
 
-<a href="https://mhenriquee.github.io/html-css/exercicios/atividade002/home.html">
+<a href="https://mhenriquee.github.io/html-css/exercicios/atividade002/home.html">Executar o exercício 001</a>
