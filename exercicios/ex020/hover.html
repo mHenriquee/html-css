@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div:hover{
+            color: orange;
+        }
+
+        /* Estamos puxando o paragrafo dentro da div, sem criar classes nem id para referenciar apenas esse parágrafo */
+        div > p {
+            display: none; /* Fazendo o paragráfo desaparecer */
+        }
+
+        /* Quando passarmos o mouse na div, o paragrafo que está dentro da div irá ... */
+        div:hover > p {
+            display: block; /* Mostrando o parágrafo */
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 119, 119);
+            width: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+        <p>Passe o mouse sobre o texto abaixo!</p>
+    <div>
+        Passe o mouse aqui
+            <p>TEXTO ESCONDIDO</p>
+    </div>
+</body>
+</html>

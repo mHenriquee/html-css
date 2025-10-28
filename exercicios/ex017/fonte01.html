@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        p {
+            /* Estamos fazendo com que caso o dispositivo não tenha Arial, ele buscará a fonte Helvetica e por ultimo caso, qualquer fonte sans-serif 
+            font-family: Arial, Helvetica, sans-serif;
+            Qualquer fonte que seja monospace serve
+            font-family: monospace;
+            1em = 16px, em se ajusta a tela e o tamanho adequado 
+            font-size: 1em; */
+
+            font: lighter 1em arial, sans-serif;
+        }
+
+        h1, h2 {
+            /*
+                Medidas Absolutas
+                cm, mm, in(polegadas), *px, pt, pc
+                
+                Medidas Relativas
+                *em, ex, rem, vw, vh, % 
+
+                *mais importantes
+            */
+
+            /*
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+            font-size: 2em;
+            font-style: italic;
+            
+            Podemos fazer essas 4 linhas em apenas uma utilizando a *shorthand* font
+            font: font-style, weight, size, family
+
+            */
+
+            font: bolder 2em Arial, sans-serif;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veniam consequuntur ad facere, id qui, provident odit nulla nam repellendus sunt quae sapiente error ut deserunt! Obcaecati dignissimos minima impedit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi modi, perferendis aliquam officiis laudantium soluta culpa facere nobis laboriosam laborum eligendi quis dignissimos suscipit in doloremque, commodi qui, dicta et.</p>
+    
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque tempora ex quas dolore nobis enim distinctio facere illo, maxime, doloremque excepturi, ab laudantium harum ipsum? Placeat quidem quis quae et?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae at obcaecati voluptates veritatis. Adipisci consequuntur nulla dolor cupiditate saepe suscipit voluptatibus quae vero debitis. Minus itaque consequuntur eum fugiat?</p>
+</body>
+</html>

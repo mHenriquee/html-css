@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+body {
+    background-color: #1682A2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cabecalho {
+    background-color: #00275A;
+    height: 80px;
+    margin: -20px -20px;
+}
+
+#titulo {
+    padding-top: 30px;
+    color: white;
+    font: bolder 1.4em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+#links {
+    background-color: black;
+    margin: 20px -10px;
+    height: 27px;
+    padding-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+span {
+    padding: 6px 171.3px;
+    margin-left: -5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#principal {
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    margin-top: -10px;
+    
+}
+
+#secao1 {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 10px 12px 120px 12px;
+    padding-top: 10px;
+}
+
+aside {
+    color: black;
+    font-weight: light;
+    font-style: italic;
+    background-color: #4e82af;
+}
+
+#artigo2 {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 100px 12px;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+#artigo1 {
+    background-color: #5F9ACE;
+    padding: 0px 5px 5px 5px;
+    border: solid 2px #000000;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.514);    
+    border-radius: 5px;  
+}
+
+#secao2 {
+    background-color: #5F9ACE;
+    padding: 10px 5px;
+    border: solid 2px #000000;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.514); 
+    border-radius: 5px;     
+}
+
+#artigo2 > h2 {
+    background-color: #5F9ACE;
+    padding: 10px 0px;
+    border: solid 2px #000000;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.514);  
+    border-radius: 0px 20px ;  
+}
+
+#rodape {
+    background-color: black;
+    color: white;
+    height: 40px;
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+}
+
+
+

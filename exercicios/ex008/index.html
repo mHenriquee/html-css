@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <!-- Aqui estamos pegando todas as tags MARK que estão no nosso código, prévia de CSS -->
+    <style>
+       
+        mark {
+            background-color: blueviolet;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold; "><mark style="background-color: aqua; color: black;">PRINCIPAIS FORMATAÇÕES</mark> </h1>
+    <h2> Negrito / Destaque </h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> utilizando a tag B (não semântica)</p>
+
+    <p>Nesta outra frase, vamos usar um <strong>termo em destaque</strong> utilizando a tag STRONG (semântica)</p>
+<br>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+
+    <p>Nesta outra frase temos um <em>termo em enfâse</em> usando a tag EM (semântica)</p>
+<br>
+    <p>Podemos marcar um <ins>texto como inserido</ins>, para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+
+    <p>Existe também o <u>sublinhado utilizando a tag U</u> (não semântica)</p>
+<br>
+
+    <h2> Texto marcado </h2>
+
+    <p>Podemos criar também um <mark style="background-color: rgb(127, 127, 235);">texto marcado</mark> usando a tag MARK</p>
+
+    <p>E em outro parágrafo, <mark>temos outro texto marcado</mark> no final</p>
+
+    <p>Esse aqui não vou colocar cor para testar se está <mark>puxando a tag style la de cima</mark></p>
+<br>
+
+    <h2> Texto grande e pequeno </h2>
+
+    <!-- tag big está obseleta, pois não faz sentido ser utilizada. A small há casos que é necessário ainda (contratos - pequenas letras)-->
+    <p>Estamos criando um <big><strong>texto grande</strong></big> e um <small><em>texto pequeno</em></small> nesse parágrafo</p>
+<br>
+
+    <h2> Texto Sobrescrito </h2>
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3 </p>
+<br>
+
+    <h2> Texto Subscrito </h2>
+    <p>Inserir coisas do tipo H<sub>2</sub>O</p>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to left, #010626,#022859,#034C8C,#2481A6 );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* 
+   em HTML = id > CSS = #
+   em HTML = class > CSS = .
+*/
+
+h1#titulo {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px auto;
+    text-transform: uppercase;
+    background-color: #010626;
+    width: 50%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 5px;
+    font-size: 2.3em;
+}
+
+h1#titulo:hover {
+    background-color: #021068;
+}
+
+h1.html {
+    color: rgb(255, 255, 255);
+    background-color: #FF7A48;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    padding-bottom: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+h1.html:hover {
+    background-color: #cf6139;
+}
+
+h1.css {
+    color: rgb(255, 255, 255);
+    background-color: #0354e0;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    padding-bottom: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+h1.css:hover {
+    background-color: #003fac;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+span.basico {
+    color: #02A676;
+    text-align: center;
+}
+
+span.intermediario {
+    color: #F2A71B;
+    text-align: center;
+}
+
+span.avancado {
+    color: #c92533;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    color: white;
+}

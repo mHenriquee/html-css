@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas </h1>
+
+    <h2>Listas Ordenadas</h2>
+    <ol type="I" start="19"> <!-- OL - Lista ordenada  type = tipo de numeração, start = numero / letra inicial -->
+        <li> Acordar </li> <!-- li se tornou opcional, li é um item da lista-->
+        <li> Ligar para o João </li>
+        <li> Tomar café </li>
+        <li> Escovar os dentes </li>
+        <li> Dormir </li>
+    </ol>
+
+    <h2> Listas Não Ordenadas </h2>
+    <ul type="disc"> <!-- disc square circle - altera -->
+        <li> Pão </li>
+        <li> Leite </li>
+        <li> Tomate </li>
+        <li> Manteiga </li>
+        <li> Arroz </li>
+        <li> Feijão </li>
+    </ul>
+
+    <h2> Listas de Definições </h2>
+    <dl> <!-- Lista de definição - funciona como um dicionário -->
+        <dt> HTML </dt> <!-- titulo da definição / do termo -->
+            <dd> Linguagem de marcação para a criação do conteúdo de um site. </dd> <!-- Definição do termo acima -->
+        <dt> CSS </dt>
+            <dd> Linguagem de marcação para a criação do design de um site. </dd>
+        <dt> JavaScript </dt>
+            <dd> Linguagem de programação para a criação de interatividade de um site. </dd>
+    </dl>
+
+    <h2> Misturando Listas </h2>
+    <h3> Minhas linguagens Favoritas </h3>
+
+    <ol type="I"> <!-- Lista 1 -->
+        <li>Antigas</li> 
+
+            <ol type="1"> <!-- Lista 2-->
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+            </ol>
+
+        <li>Novas</li>
+
+            <ol type="1" start="4"> <!-- Começando a lista do elemento 4 -->
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>  
+
+    </ol>
+
+    <h3 style="color: rgb(35, 35, 214); font-family: Arial, Helvetica, sans-serif"> MEUS JOGOS FAVORITOS </h3>
+    <ol type="I">
+        <strong><li>HISTÓRIA</li></strong>
+
+            <ul type="disc">
+                <li>The Last of Us Part II </li>
+                <li>Clair Obscur: Expedition 33</li>
+                <li>God of War Ragnarok </li>
+            </ul>
+
+            <br>
+
+        <strong><li>RPG</li></strong>
+
+            <ul type="disc">
+                <li>Persona 5 Royal</li>
+                <li>The Witcher III Wild Hunt</li>
+                <li>Deltarune</li>
+                <li>Final Fantasy VII Rebirth - Intergrade</li>
+                <li>Baldur's Gate III</li>
+                <li>Elden Ring</li>
+            </ul>
+
+            <br>
+
+       <strong><li>ROGUELIKE E METROIDVANIA</li></strong>
+        
+            <ul type="disc">
+                <li>Hollow Knight: Silksong</li>
+                <li>Hades II</li>
+                <li>Hollow Knight</li>
+                <li>Ori and the Will of the Wisps</li>
+                <li>Balatro</li>
+                <li>Hades</li>
+            </ul>
+
+    </ol>
+
+
+</body>
+</html>

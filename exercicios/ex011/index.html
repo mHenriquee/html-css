@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+        <h1>Imagem Dinâmica</h1>
+        <p>Tente abrir esses site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+        <picture>
+
+            <source media="(max-width:720px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Usar max width, e utilizar o tamanho da imagem grande + 40/50px (tamanho da barra de rolagem) -->
+            <source media="(max-width:1035px)" srcset="imagens/foto-m.png" type="image/png">
+
+            <img src="imagens/foto-g.png" alt="Imagem flexível">
+        </picture>
+
+<br>
+
+    <h1>Reproduzindo Áudio</h1>
+
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!-- auto - automaticamente baixa o áudio / metadata - mostra apenas o tempo e outros dados do aúdio -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/slowerpace 音楽 - press start.mp3" type="audio/mpeg">
+        <source src="midia/slowerpace 音楽 - press start.mp3" type="audio/ogg">
+        <source src="midia/slowerpace 音楽 - press start.mp3" type="audio/wav">
+        <!-- Caso o navegador não suporte a midia, vamos colocar um botão de ultimo caso para o usuário baixar o aúdio -->
+         <p>Infelizmente seu navegador não consegue reproduzir o áudio <a href="midia/slowerpace 音楽 - press start.mp3">Clique aqui para baixar</a></p>
+
+    </audio>
+
+<br>
+<br>
+
+
+        <a href="teste.html" target="_self" rel="next">Próxima Página</a>
+</body>
+</html>

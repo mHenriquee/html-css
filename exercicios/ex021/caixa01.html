@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* box level */
+            /* display: inline; transformando a caixa em inline-box*/
+            background-color: antiquewhite;
+            height: 300px;
+            width: 300px;
+
+            /* border: style size color */
+            border: solid 2px black;
+
+            /* caso todas as medidas sejam a mesma podemos colocar apenas uma unica medida 
+            padding: 10px (top,left,bottom,right todos iguais)
+
+            podemos também colocar duas medidas que irão mudar (top bottom) (left right)
+            padding: 10px 20px (top bottom ficarão com 10px cada e 20px para o left right)
+            
+            */
+            padding: 10px 10px 10px 10px ;
+
+            /* margin: auto - faz com que a caixa fique no meio 
+            margin: top left bottom right - colocando as duas medidas laterais com o auto faz com que centralize a caixa no centro da página
+
+            */
+            margin: 20px auto 30px auto;
+            text-align: center;
+            outline: solid 10px chocolate;
+
+        }
+
+        a { /* inline-level */
+            /* display: block; transformando a caixa em box-level */
+            background-color: azure;
+            border-width: 3px;
+            border-style: groove;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aqua;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona</p>
+
+
+    <div id='bola'> <p>🐟</p> </div>    
+</body>
+</html>

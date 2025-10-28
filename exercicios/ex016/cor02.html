@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* * é usado para alterar configurações globais do CSS, isso no nosso código faz com que o background não seja cortado */
+        * {
+            height: 100%;
+        }
+
+        /* Fazendo o gradiente no fundo do site */
+        body {
+            background-image: linear-gradient(to bottom, #16193B 10%,#35478C,#4E7AC7,#7FB2F0,#ADD5F7);
+            /* Fazendo nosso fundo cobrir toda a tela, mesmo ao descer para baixo*/
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: #F2F2F2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes!</h1>
+</body>
+</html>

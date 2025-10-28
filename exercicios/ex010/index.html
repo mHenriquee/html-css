@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+
+    <h1>Utilizando links EXTERNOS</h1>
+
+    <p>Vamos utilizar links externos para levar o usuário para outra página, porém, não queremos que nossa página seja sobreposta pelo link</p>
+
+    <p>Vamos acessar o link do <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" relative="external"> repositório externo do GitHub </a></p>
+    <!-- href colocamos o link, target=_blank funciona para o link abrir uma nova aba e não sobrepor nosso site e rel=external apenas para referenciar que o link é de fora do site (externo) -->
+
+    <p>Vamos acessar um vídeo bem legal para <a href="https://www.youtube.com/watch?v=XNOYiR8qk84" target="_blank" rel="external">assistir depois</a></p>
+    
+    <h1>Utilizando links INTERNOS </h1>
+
+    <!-- rel=next e rel=prev são utilizados para se referir a links para a proxima pagina, ou a pagina anterior -->
+    <p>Está é a nossa primeira página do site, também podemos ir para a segunda página utilizando esse <a href="pagina2.html" target="_self" rel="next">link</a></p>
+
+    <p>Caso queira acessar nossa terceira página que fica fora desse exercicio, acesse esse <a href="pagina3/pagina3.html">link</a></p>
+
+    <h1>Links para download</h1>
+    <ul type="disc">
+        <!-- Esse type varia de acordo com o arquivo - essas informações são tiradas do site iana.org/mediatypes, cada tipo tem uma entrada diferente -->
+        <li><a href="pdf/APMIF São Rafael.pdf" download="APMIF São Rafael.pdf" type="application/pdf" style="color: orange;">Aqui você pode baixar o pdf ou abri-lo em seu navegador</a></li>
+        <li><a href="pdf/APMIF São Rafael.rar" download="APMIF São Rafael.zip" type="application/zip" style="color: rgb(175, 0, 175);">Aqui você pode baixar o arquivo pdf em formato zip</a></li>
+    </ul>
+
+
+</body>
+</html>

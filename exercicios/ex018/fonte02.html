@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes externas</title>
+    <style>
+        @font-face {
+            /* Nome da fonte para utilizarmos*/
+            font-family: 'BlackHunter';
+            /* Podemos colocar vários tipos de font usando o url */
+            src: url('fontes/Blackhunter.ttf') format('truetype') /*, url(Blackhunter.otf) format('truetype')*/;
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* 
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype 
+            - true-aat (Apple Advanced Typography)
+            - svg
+
+        */
+
+        p {
+            text-align: justify;
+            font: normal 3.5em 'BlackHunter';
+        }
+
+        h1 {
+            text-align: center;
+            font: normal 7em 'BlackHunter';  
+            margin-top: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam minus ipsum cum non impedit officia voluptatibus. Facilis harum repudiandae earum voluptatem, incidunt voluptatum, alias quas ipsa ut magnam esse non?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quisquam nostrum fugiat possimus in voluptatibus explicabo omnis, veniam nam sed id exercitationem libero beatae quod optio molestiae rem deserunt fuga?</p>
+
+</body>
+</html>
