@@ -82,6 +82,7 @@ section.normal {
 }
 
 .especial > p {
+    text-shadow: 2px 2px 1px black;
     background-color: rgba(0, 0, 0, 0.534);
     width: max-content;
     padding: 10px;
