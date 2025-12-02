@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários sem Input</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            
+            <select name="est" id="iest">
+                <option value="" selected> -- Escolha -- </option>
+
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PR">Paraná</option>
+
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SP">São Paulo</option>
+
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="RJ">Rio de Janeiro**</option>
+                        <option value="RJ">Rio de Janeiro**</option>
+                        <option value="RJ">Rio de Janeiro**</option>
+
+                    </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="datalist">
+            <datalist id="datalist">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Programador</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="imens">Escreva uma mensagem</label><br>
+            <textarea name="mens" id="imens" cols="50" rows="20" placeholder="Escreva aqui..."></textarea>
+        </p>
+
+        <p>
+            <label for="in1">Numero 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Numero 2:</label>
+            <!-- javascript - quando houver input o que estiver dentro do isoma que vai ser igual a um número, será somado ao in1 ^ -->
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!-- variavel atual guardando o ano de 2025 (new Date() getfullyear)
+    o que estiver dentro do iidade = 2025 - dado que foi informado 
+    -->
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+
+        }
+
+    </script>
+
+</body>
+</html>
