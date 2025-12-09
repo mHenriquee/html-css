@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* > Mobile First < */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    background-color: rgb(156, 179, 255);
+}
+
+header {
+    background-color: rgb(36, 36, 160);
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+menu > ul > li {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+li#ult {
+    border-bottom: 2px solid black;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+main > article {
+    width: 65vw;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.61);
+}
+
+h2 {
+    text-align: center;
+}
+
+main > article > p {
+    text-align: justify;
+    padding-top: 10px;
+}
+
+
