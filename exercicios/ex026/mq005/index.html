@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <!-- Colocando o ícone de menu -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <!-- Criando as outras media queries para outros tipos de tela -->
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
-            <menu>
+            <i id="menu" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="itens">
                 <ul>
-                    <li><a href="#">Opção 1</a></li>
+                    <li id="prim"><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
                     <li><a href="#">Opção 3</a></li>
                     <li><a href="#">Opção 4</a></li>
@@ -31,5 +36,26 @@
 
         </article>
     </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -33,9 +33,38 @@ li#ult {
     border-bottom: 2px solid black;
 }
 
+li#prim {
+    border-top: 0px solid black;
+}
+
+i#menu {
+    background-color: white;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+i#menu:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+menu {
+    display: none;
+}
+
 menu > ul > li > a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+menu > ul > li:hover {
+    text-decoration: none;
+    background-color: rgb(192, 212, 255);
+    font-weight: 400;
+    transition: 0.5s;
 }
 
 main > article {
