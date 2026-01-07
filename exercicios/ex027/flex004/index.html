@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div#container {
+            background-color: rgb(255, 187, 0);
+            height: 200px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: rgb(255, 237, 156);
+            text-align: center;
+            padding: 35px;
+            
+            
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    
+</body>
+</html>

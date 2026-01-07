@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização com Flexbox</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: rgb(60, 60, 167);
+        }
+
+        /* Container pai */
+        main {
+            background-color: rgb(86, 117, 163);
+            height: 300vh;
+            width: 100vw;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Container filho */
+        section {
+            background-color: aliceblue;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1> Tela de Login </h1>
+        </section>
+    </main>
+</body>
+</html>
