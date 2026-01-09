@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div#container {
+            background-color: blanchedalmond;
+            display: flex;
+            flex-flow: row nowrap;
+
+        }
+
+        div.item {
+            background-color: aqua;
+            text-align: center;
+            
+            border: 1px solid black;
+            flex-basis: 200px;
+        }
+
+        div#cxA {
+            flex-grow: 1;
+            flex-shrink: 6;
+        }
+
+        div#cxB {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        div#cxC {
+            flex-grow: 2;
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+    
+</body>
+</html>
